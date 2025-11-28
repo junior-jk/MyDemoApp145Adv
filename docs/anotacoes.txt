@@ -1,0 +1,5 @@
+npx wdio run ./config/android.local.conf.js
+npx wdio run ./config/android.sauce.device.conf.js
+npx wdio run ./config/android.sauce.emulator.conf.js
+
+npx wdio run conf.js
