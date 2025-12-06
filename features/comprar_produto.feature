@@ -8,6 +8,7 @@ Feature: Fluxo de Compra
         Then exibe o numero 1 no icone do carrinho
         When clico no carrinho
         Then verifico o "<produto>" e o "<preco>" no carrinho
+    
 
         Examples:
         | produto                       | preco   | rolagem | index |

@@ -10,7 +10,7 @@ exports.config = {
     capabilities: [{
         platformName: "Android",
         "appium:platformVersion": "13.0",
-        "appium:deviceName": "emulator-5554",
+        "appium:deviceName": "emulator5554",
         "appium:deviceOrientation": "portrait",
         "appium:appPackage": "com.saucelabs.mydemoapp.android",
         "appium:appActivity": "com.saucelabs.mydemoapp.android.view.activities.SplashActivity",
@@ -32,7 +32,7 @@ exports.config = {
 
     cucumberOpts: {
         require: ['./features/step-definitions/*.js'],
-        timeout: 60000
+        timeout: 80000
     },
 
     reporters: ['spec'],

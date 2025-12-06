@@ -4,14 +4,20 @@ import ProductDetailPage from "../../pages/product_details.page"
 import CartPage from "../../pages/cart.page"
 
 After(async () => {
-    await driver.reloadSession()
-    await driver.pause(1000)
+    // await driver.reloadSession()
+    // await driver.pause(1000)
+    // Finaliza o teste que estava em andamento
+    await driver.terminateApp('com.saucelabs.mydemoapp.android');
+    // Deixa pronto para rodar o próximo
+    await driver.activateApp('com.saucelabs.mydemoapp.android');
 })
 
 Given("que estou na tela de Produtos", async() => {
+    await driver.pause(1000) // uma pausa para aguardar carregar a tela
     // await expect(ProductPage.logo).toBeDisplayed() // está sendo exibido
-    // await expect(ProductPage.titulo_produto).toBeDisplayed()
-    // await expect(ProductPage.titulo_produto).toHaveText('Products')
+    // await expect(ProductPage.titulo_secao).toBeDisplayed()
+    // await expect(ProductPage.titulo_secao).toHaveText('Products')
+    // Estava .titulo_produto ao invés de .titulo_secao
 
 })
 

@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "wdio": "wdio run ./wdio.conf.js"
+    "wdio":"wdio run ./wdio.conf.js",
+    "slem": "wdio run ./wdio.sauce_labs.conf.js",
+    "sauce": "wdio run ./wdio.sauce_labs.conf.js"
   },
   "keywords": [],
   "author": "",
